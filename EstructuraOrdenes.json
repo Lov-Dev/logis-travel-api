@@ -1,0 +1,57 @@
+{
+  "ordenes": [
+    {
+      "id_orden": "ORD-0001",
+      "fecha": "2026-11-10",
+      "estado": "confirmada",
+      "cliente": {
+        "id_cliente": "CLI-1001",
+        "nombre": "María González",
+        "email": "maria.gonzalez@ejemplo.cl"
+      },
+      "servicios": [
+        {
+          "tipo": "vuelo",
+          "origen": "SCL",
+          "destino": "LIM",
+          "fecha_salida": "2026-12-05",
+          "precio_usd": 320.50
+        },
+        {
+          "tipo": "hotel",
+          "ciudad": "Lima",
+          "noches": 4,
+          "precio_usd": 480.00
+        }
+      ],
+      "pago": {
+        "metodo": "tarjeta",
+        "total_usd": 800.50,
+        "pagado": true
+      }
+    },
+    {
+      "id_orden": "ORD-0002",
+      "fecha": "2026-11-10",
+      "estado": "pendiente",
+      "cliente": {
+        "id_cliente": "CLI-1002",
+        "nombre": "Carlos Rojas",
+        "email": "carlos.rojas@ejemplo.cl"
+      },
+      "servicios": [
+        {
+          "tipo": "traslado",
+          "origen": "Aeropuerto SCL",
+          "destino": "Hotel Centro",
+          "precio_usd": 35.00
+        }
+      ],
+      "pago": {
+        "metodo": "transferencia",
+        "total_usd": 35.00,
+        "pagado": false
+      }
+    }
+  ]
+}
